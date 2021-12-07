@@ -1,0 +1,52 @@
+* {
+  font-family: "Arial";
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #f1f1f1;
+}
+
+main {
+  flex: 1;
+  padding: 10px;
+  background-color: #2f363d;
+  color: #f1f1f1;
+}
+
+textarea {
+  width: 100%;
+  height: 80%;
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  outline: none;
+  resize: none;
+  border-radius: 20px;
+  padding: 15px;
+  color: #fff;
+}
+
+/* Bootstrap */
+#sidebarMenu {
+  height: 100%;
+}
+
+#sideBar {
+  font-size: 10px;
+}
+
+.img-logo {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- https://material.io/resources/icons/?style=round -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- https://material.io/resources/icons/?style=sharp -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- https://material.io/resources/icons/?style=twotone -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../lib/bootstrap-5.0.2-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../lib/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css">
+
+    <title>Text Editor</title>
+  </head>
+  <body>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <p class="navbar-brand col-md-3 col-lg-2 me-0 px-3 w-50 my-auto">
+        <img class="img-logo" src="img/sloth.png" alt="logo"/> 
+        <b>SlothyEditor</b>
+      </p>
+      <div class="navbar-nav text-light w-50 my-auto mr-2">
+        <div class="nav-item d-flex justify-content-end">
+          <span id="documentName" class="document-name mx-4">No file selected</span>
+          <div class="menu-section">
+            <button id="openDocumentBtn" title="Open a document">
+              <span class="material-icons-outlined" id="launch"> launch </span>
+            </button>
+            <button id="createDocumentBtn" title="Create a new document">
+              <span class="material-icons-outlined"> note_add </span>
+            </button>
+            <button
+              id="saveDocumentBtn"
+              title="Save document"
+              class="invisible"
+              disabled>
+              <span class="material-icons-outlined"> save </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <nav
+          id="sidebarMenu"
+          class="col-md-3 col-lg-2
+            d-md-block
+            bg-dark
+            sidebar
+            collapse
+            text-light
+            h-100">
+          <div class="position-sticky pt-3">
+            <ul id="sideBar" class="nav flex-column">
+            </ul>
+          </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div
+            class="d-flex
+              justify-content-between
+              flex-wrap flex-md-nowrap
+              align-items-center
+              pt-3
+              pb-2
+              mb-3
+              border-bottom">
+            <h1 class="h2">Text Editor</h1>
+          </div>
+          <textarea
+            class="text-light"
+            id="fileTextArea"
+            aria-label="false"
+            disabled></textarea>
+        </main>
+      </div>
+    </div>
+
+    <script src="../lib/jquery/jquery-3.6.0.js"></script>
+    <script src="../lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../lib/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="../lib/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
